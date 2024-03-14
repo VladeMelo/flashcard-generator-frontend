@@ -45,11 +45,12 @@ function App() {
         quantity: quantity,
         text: text,
       });
-  
+      
       setData(result.data);
       handleDownloadCSV(result.data)
     } catch (error) {
       console.error(error);
+      alert('Erro! Tente um novo texto relacionado à Medicina.')
     } finally {
       setIsLoading(false); // Desativa o loading
     }
@@ -74,6 +75,7 @@ function App() {
       handleDownloadCSV(result.data)
     } catch (error) {
       console.error(error);
+      alert('Erro! Tente uma nova imagem relacionada à Medicina.')
     } finally {
       setIsLoading(false); // Desativa o loading
     }
