@@ -50,7 +50,7 @@ function App() {
       handleDownloadCSV(result.data)
     } catch (error) {
       console.error(error);
-      alert('Erro! Tente um novo texto relacionado à Medicina.')
+      alert('Ocorreu um erro! Tente novamente.')
     } finally {
       setIsLoading(false); // Desativa o loading
     }
@@ -75,7 +75,7 @@ function App() {
       handleDownloadCSV(result.data)
     } catch (error) {
       console.error(error);
-      alert('Erro! Tente uma nova imagem relacionada à Medicina.')
+      alert('Ocorreu um erro! Tente novamente.')
     } finally {
       setIsLoading(false); // Desativa o loading
     }
